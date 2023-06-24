@@ -1,16 +1,35 @@
-import Header from "./components/Header";
-import './App.css';
-import ItemListContainer from "./components/ItemListContainer";
+import React from 'react';
+import NavBar from './components/Navbar/NavBar';
+import Main from './components/ItemListContainer/Main';
+import Footer from './components/Footer/Footer';
+import Cart from '../src/components/Cart/Cart';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import CartProvider from './Context/CartContext';
+
+
+
 
 function App() {
+  return (
+    <>
+      <BrowserRouter>
+        <CartProvider>
+        <NavBar />
+        <Routes>
+          <Route exact path='/' element={<Main />} />
+          <Route exact path="/item/:id" element={<ItemDetailContainer />} />
+          <Route exact path="/categorias/:type" element={<Main />}/>
+          <Route exact path='/cart' element={<Cart />}/>
+        </Routes>
+        </CartProvider>
+        <Footer />
+      </BrowserRouter>
+    </>
+  );
 
 
-  return(
-    <div>
-      <Header />
-      <ItemListContainer mensaje="Hola mundo!"/>
-    </div>
-  )
+
 }
 
-export default App
+export default App;

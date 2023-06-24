@@ -1,0 +1,25 @@
+.itemCart {
+
+	width: 100%;
+
+	margin-bottom: 50px;
+}
+
+.itemCart img {
+    width: 200px;
+    margin-right: 1rem;
+}
+
+
+.detalle__precioTotal{
+  
+        pointer-events: none;
+        position: relative;
+        color: white;
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 95px;
+    }
+
+

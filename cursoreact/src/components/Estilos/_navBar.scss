@@ -1,0 +1,172 @@
+
+  /* MENU */
+  .navBarMod {
+    background-color: black !important;
+  }
+  
+  .navBarMod__a a {
+    color: white;
+    margin: 0px 12px;
+  }
+  
+  .nav-link:hover {
+    color: #d60909;
+  }
+  
+  .nav-link:focus {
+    color: #d60909;
+  }
+  
+  .navBarMod__contador {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: #d60909;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto;
+    padding: 0.563rem;
+    position: absolute;
+    font-size: 0.625rem;
+    right: 1.063rem;
+    top:0.625rem;
+    font-weight: 400;
+    color: white;
+
+
+
+
+    
+  }
+  
+  .navBarMod__logo {
+    animation: navbar__logo-spin 4000ms ease infinite;
+    animation-timing-function: linear;
+  }
+  
+  
+  .contenedor {
+    background-image: url(../../img/fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+
+      &__texto {
+          width: 40%;
+          position: absolute;
+          top: 12.5rem;
+          left: 5rem;
+          color: white;
+          justify-content: center;
+          text-align: center;
+        }
+      
+      
+        &__texto h1 {
+          font-family: 'Pokemon Solid', sans-serif;
+          font-size: 3.5rem;
+          margin-bottom: 3rem;
+          background-image: linear-gradient(to right, #F7FF00, #FFD500);
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          color: transparent;
+        }
+        
+        
+      
+      
+        &__img {
+          position: absolute;
+          right: 5.5rem;
+          top: 9.5rem;
+          box-shadow: 0px 0px 10px rgba(0,0,0,.9);
+          border-radius: 10px;
+          width: 44%;
+        }
+        
+
+
+
+  }
+  
+  
+  .navBarMod__banner {
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  @keyframes navbar__logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  
+  }
+
+
+  .cards__detalle.btn.btn-primary {
+    margin-top: 10px;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+  }
+
+
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu > li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+  }
+  
+  .menu li:hover ul {
+    display: block;
+  }
+  
+  .menu li ul li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .menu li ul li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .menu li ul li:hover {
+    background-color: #f5f5f5;
+  }
+  
+  
+  .nav-link:hover {
+    cursor: pointer;
+  }
+
